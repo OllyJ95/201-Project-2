@@ -1,0 +1,30 @@
+html, body {
+	font-family: Georgia, serif;
+	height: 100%;
+	margin: 0;
+	width: 100%;
+}
+
+.header {
+	margin: 20px;
+}
+
+nav ul{
+	list-style-type: none;
+	display: inline;
+}
+
+li {
+	display: inline;
+}
+
+main{
+	width: 100%;
+}
+
+main img{
+	position: relative;
+	width: 100px;
+	height: 30px;
+}
+
