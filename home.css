@@ -1,0 +1,333 @@
+html, body {
+	font-family: 'PT Sans', sans-serif;
+	height: 100%;
+	margin: 0;
+	width: 100%;
+
+}
+
+header {
+	background-color: #b6d9c5;
+}
+
+header .row {
+	display: inline-flex;
+	padding-top: 10px;
+	
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.col-md-12{
+	display: inline-flex;
+	align-items: center;
+
+}
+
+.col-md-12 p{
+	font-size: 18px;
+	margin-left: 60px;
+
+}
+
+.col-md-6 {
+	margin: 10px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.col-md-6 img{
+	margin: 0 auto;
+}
+
+.logo {
+	width: 100%;
+	position: absolute;
+}
+
+.links {
+	height: 1200px;
+	margin: 0;
+	/*display: flex;*/
+	align-items: center;
+	background-color: #fdb051;
+}
+
+#jumba {
+	margin: 0px;
+	padding: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.jumbotron img{
+	width: 100%;
+}
+
+#myProgress {
+  height: 30px;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 89.8%;
+  height: 100%;
+  background-color: #809fa7;
+}
+
+#label {
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.main {
+	width: 100%;
+	height: auto;
+	background-color: #e0eecb;
+	margin-top: 30px;
+	display: inline-flex;
+}
+
+.main h2{
+	text-align: justify;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.footer {
+	margin-top: 30px;
+	width: 100%;
+	height: 250px;
+	background-color: #232323;
+	color: #ffffff;
+}
+
+.footer p{
+	position: relative;
+
+}
+
+a:link {
+    color: #114c59;
+}
+
+/* visited link */
+a:visited {
+    color: #114c59;
+}
+
+/* mouse over link */
+a:hover {
+    color: #dcf3aa;
+}
+
+/* selected link */
+a:active {
+    color: #dcf3ab;
+}
+
+p {
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+	font-family: 'PT Sans', sans-serif;
+}
+
+h3 {
+	font-family: 'PT Sans', sans-serif;
+}
+
+.donationBlock h1 {
+	font-family: 'PT Sans', sans-serif;
+}
+
+.donationBlock h2 {
+	font-family: 'PT Sans', sans-serif;
+}
+
+.donationBlock h3 {
+	font-family: 'PT Sans', sans-serif;
+}
+
+body {
+	background: #1b1e24;
+}
+
+ul {
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+	width: 1100px;
+}
+
+ul li {
+	float:left;
+	margin:20px 25px;
+}
+
+
+.shape {
+	width: 500px;
+	height: 500px;
+	position: relative;
+}
+		
+	.shape .overlay {
+		display:block;
+		width: 510px;
+		height: 510px;
+		position: absolute;
+		top:-5px;
+		left:-5px;
+		-webkit-transform: scale(1,1);
+		-webkit-transition-timing-function:ease-out;
+		-webkit-transition-duration: 0.6s;
+		-moz-transform: scale(1,1);
+		-moz-transition-timing-function: ease-out;
+		-moz-transition-duration: 0.6s;
+		transform: scale(1,1);
+		transition-timing-function: ease-out;
+		transition-duration: 0.6s;				
+		z-index:500;
+		/* allow user to actually perform actions underneath this layer */
+		pointer-events:none; 
+		background-repeat: no-repeat;
+		outline:0;		
+	}
+
+/* different shapes */
+.shape .overlay.round {
+	background: url(images/round.png);		
+}
+		
+
+/* hover effect */
+.shape:hover .overlay {
+	-webkit-transform: scale(1.07,1.07);
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 0.3s;
+	-moz-transform: scale(1.07,1.07);
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 0.3s;
+}
+
+
+.shape:hover .bg {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  display:block;
+}
+
+.shape:hover .details {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+	z-index:450;
+  display:block;	
+}	
+		
+		
+
+/* content styles */
+.shape .bg, 
+.shape .details {
+	position: absolute;
+	width: 510px;
+	height:510px;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	top:0;
+	left:0;
+	opacity:0;
+	-webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;				
+	display:none;  
+}		
+
+.shape .bg {
+	background: #4b5a78;		
+}
+
+.shape .details span.heading {
+	font-family: 'PT Sans', sans-serif;	
+	font-size:30px;
+	display:block;
+	margin-top:70px;
+	color:#fff;
+	text-decoration:none;
+}
+
+.shape .details p {
+	font-family: 'PT Sans', sans-serif;		
+	color:#fff;
+	width: 70%;
+	font-size:14px;
+	margin:0 auto;
+}
+
+.shape a.button {
+	padding:5px 15px;
+	font-family: 'PT Sans', sans-serif;	
+	font-size:12px;	
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	background: #2f3644;
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	width:50px;
+	margin:0 auto;
+	text-align:center;
+	margin-top:15px;
+}
+
+	.shape a.button:hover {
+		background: #fff;
+		color: #2f3644;				
+	}
+
+	#roughNstuff{
+		background-image: url(images/jumbo2.jpg);
+		width: 1920px;
+		height: 1080px;
+	}
+
+	#sponge{
+		background-image: url(images/jumbo3.jpg);
+		width: 1920px;
+		height: 1080px;
+	}
+
+	.donationBlock{
+		margin: 0 auto;
+		width: 100%;
+		height: 300px;
+		background-color: #232323;
+		color: #ffffff;
+		text-align: center;
+	}

@@ -1,41 +1,245 @@
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+  <html>
   <head>
 
     <meta charset="UTF-8">
     <title>Surplus Home</title>
-     <link rel="stylesheet" type="text/css" href="main.css"/>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.xx.x/css/uikit.min.css" />
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.xx.x/js/uikit.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="home.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"/>
+
 
   </head>
 
   <body>
 
-  <p>fuck</p>
-    <div class ="container">
+    <div id="jumba" class ="jumbotron">
 
-    <div class ="header">
-    <nav>
-    <ul class="left-menu">
-      <li class="left-menu">Login</li> 
-      <li class="left-menu">Donate</li>
-      <li class="left-menu">Home</li>
-      <li class="left-menu">Apply</li>
-      <li><img src="logo.png" style="width: 600px; height:300px;"/></li>
-      </ul>
-    </nav>
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active" id="roughNstuff">
+            <img src="images/logo2.png" style="margin: 0 auto; width: 500px; height: 250px;"/>
+          </div>
+
+          <div class="item" id="sponge">
+            <img src="images/logo2.png" style="margin: 0 auto; width: 500px; height: 250px;"/>
+
+
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <div class ="row">
+        <div class ="logo">
+          <div class ="col-md-12">
+            <!--<img src="images/logo2.png" style="margin: 0 auto; width: 500px; height: 250px;"/>-->
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <!-- <img src="images/jumbo2.jpg"/> -->
+
+
+
+    <!-- <header class="site-nav">
+        <div class ="row"> 
+          <div class="col-md-12">
+
+            <p><a href="Donate.html">Donate</a></p> 
+            <p><a href="Contact.html">Contact</a></p> 
+            <p><a href="Login.html">Login</a></p>
+
+        </div>
     </div>
+  </header> -->
+</div>
 
-    
+<!--             <div class="row"> -->
+<div class="donationBlock">
+  <div style="margin-right: 25%; margin-left: 25%; width: 50%;">
+   <h2 style="margin: 0">Donated Today</h2>
+   <h3>$2,246.78</h3>
+   <h2>Today's Goal</h2>
+   <h3>$2,500.00</h3>
 
-    <main>
-    </main>
-
-    <div class ="footer">
+   <div id="myProgress">
+    <div id="myBar">
+      <div id="label">89.8%</div><br>
     </div>
+  </div>
 
-    </div>
-  </body>
+      <form style="margin-top: 20px;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+        ">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="links">
+  <ul>
+
+    <li>
+
+      <div class="shape">
+        <a href="#" class="overlay round"></a>
+
+        <div class="details">
+          <span class="heading">LOGIN</span>
+          <hr />
+          <p>Returning members login here.</p>    
+          <a href="#" class="button">VIEW</a>
+        </div>
+
+        <div class="bg"></div>
+
+        <div class="base">
+          <img src="images/login.jpg" alt="" />
+        </div>
+
+      </div>  
+
+    </li>
+
+    <li>
+
+      <div class="shape">
+        <a href="#" class="overlay round"></a>
+
+        <div class="details">
+          <span class="heading">DONATE</span>
+          <hr />
+          <p>What we do wouldn't be possible without our generous community. Any sized donations are welcome.</p>    
+          <a href="#" class="button">VIEW</a>
+        </div>
+
+        <div class="bg"></div>
+
+        <div class="base">
+          <img src="images/donate.jpg" alt="" />
+        </div>
+
+      </div>  
+
+    </li>
+
+
+    <li>
+
+      <div class="shape">
+        <a href="#"  class="overlay round"></a>
+        <div class="details">
+          <span class="heading">ABOUT US</span>
+          <hr />
+          <p>To find out more about who we are and what we do, click the link below.</p>    
+          <a href="#" class="button">VIEW</a>   
+        </div>
+        <div class="bg"></div>
+        <div class="base">
+          <img src="images/about.jpg" alt="" />
+        </div>
+      </div>  
+
+    </li>
+
+
+    <li>
+
+      <div class="shape">
+        <a href="#"  class="overlay round"></a>
+        <div class="details">
+          <span class="heading">CONTACT US</span>
+          <hr />
+          <p>Any questions about our goals, don't hesitate to contact us.</p>    
+          <a href="#" class="button">VIEW</a>   
+        </div>
+        <div class="bg"></div>
+        <div class="base">
+          <img src="images/contact.jpg" alt="" />
+        </div>
+      </div>  
+
+    </li>
+
+  </div>
+
+
+</div>
+
+<!--<div class="main">
+  <div class="col-md-1">
+
+  </div>
+
+  <div class="col-md-8">
+
+    <h1>About Us</h1>
+
+    <p>Surplus is about giving people ability to give back to their local communities and help those less fortunate. The project focuses around crowdfunding meals for people of a low economic standing. The project allows people to donate money for those less fortunate to use exclusively at local restaurants and food outlets.
+
+      In order for users to be eligible for the service, they will have to provide multiple forms of identification and their income information. This information is required to ensure the service is being provided to those who need it most, and is kept completely confidential. The user is then issued a credit card which they can use at the participating outlets. Depending on the applicant's economic status, a daily limit will be imposed on them.
+      <br>
+      <br>
+      This service not only allows users to help others in need, but gives them a way to provide to their local community. By ensuring money is spent locally, user donations will help boost their local economy.
+      <br>
+      <br>
+      If you think surplus could help you, come in and see one of our friendly advisors or enquire through our contact page.
+  </p>
+</div>
+
+<div class="col-md-3">
+</div>
+</div>
+-->
+
+<div class="footer">
+  <p class="col-sm-5">&copy; 2016 Surplus</p>
+</div>
+</div>
+
+</body>
 
 </html>
